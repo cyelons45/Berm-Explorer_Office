@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.table {
+    height: 100vh;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    vertical-align: middle;
+    background-position: center;
+    background-size: cover
+}
+
+.header {
+    height: 7vh;
+    width: 100%;
+    background-color: rgb(210, 228, 228);
+    padding: 0px;
+    margin: 0px;
+}
+
+.header td {
+    height: 7vh;
+    width: 100%;
+    /* background-color: rgb(255, 0, 13); */
+    padding: 0px;
+    margin: 0px;
+}
+
+.map-area-main {
+    height: 65vh;
+    width: 100%;
+    /* background-color: rgb(214, 34, 214);   */
+    padding: 0px;
+    margin: 0px;
+}
+
+.map-area-main td {
+    height: 100%;
+    width: 100%;
+    /* background-color: rgb(214, 34, 214);   */
+    padding: 0px;
+    margin: 0px;
+}
+
+.map__area {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    z-index: -999;
+    padding: 0;
+}
+
+.chart-area-main {
+    height: 25vh;
+    width: 100%;
+    height: 0px;
+    display: block;
+    /* background-color: aqua;    */
+}
+
+.close-chart {
+    width: 100%;
+    /* height: 0px; */
+    display: none;
+}
+
+.chart-area-main td {
+    height: 100%;
+    width: 100%;
+}
+
+.main__head {
+    height: 100%;
+    width: 100%;
+    background-color: #006699;
+    overflow: hidden;
+    z-index: 1000;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 5px;
+    border-bottom: 1px solid #fff;
+}
+
+.header__box {
+    width: 100%;
+    height: 100%;
+    z-index: 900;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #fff;
+}
+
+.title {
+    color: #fff;
+    float: left;
+    margin-left: 20px;
+}
+
+.title h1 {
+    font-weight: 100i;
+    letter-spacing: 4px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.title span {
+    font-weight: 100i;
+    /* letter-spacing: 4px; */
+    /* background-color: red; */
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav {
+    float: right;
+    /* background-color: #fff; */
+    margin: 30px 0 15px 0;
+    color: rgb(243, 247, 243);
+    margin-right: 20px;
+}
+
+ul {
+    list-style: none;
+    display: block;
+}
+
+ul li {
+    float: left;
+    margin-right: 20px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+ul li:last-child {
+    margin-right: 0px;
+}
+
+.chart {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.chart-head {
+    height: 25px;
+    width: 100%;
+    background-color: #006699;
+    width: 100%;
+}
+
+.chart-area {
+    height: 200px;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    background-color: aquamarine;
+    /* margin: 2px auto; */
+    /* margin: 2px 5px 2px 100px; */
+    /* background-color: rgb(113, 207, 24) */
+}
+
+#viewDiv {
+    height: 100%;
+    width: 100%;
+    z-index: -999;
+    /* position: relative; */
+}
+
+.selection ul,
+.download ul {
+    width: 200px;
+    z-index: 1000;
+    position: absolute;
+    opacity: 0.9;
+    margin-top: 0px;
+    padding-top: 25px;
+    background-image: linear-gradient(180deg, transparent 0%, transparent 25px, #006699 25px, #006699 100%);
+}
+
+.selection ul li,
+.download ul li {
+    width: 200px;
+    display: inline-block;
+    margin: 1px 0;
+    font-size: 14px;
+    font-weight: 100i;
+    color: #fff;
+    padding: 4px 5px;
+    border: 1px solid white;
+    /* font-weight: 700 !important; */
+    border-bottom: 1px solid rgb(230, 224, 224);
+}
+
+.selection ul li:hover,
+.download ul li:hover {
+    background-color: #FFF;
+    color: rgb(32, 31, 31) !important;
+}
+
+.item ul li {
+    display: none;
+    /* color: #00ffff */
+}
+
+.item:hover {
+    color: #F05C5A;
+    font-weight: 300i;
+    /* color: hsl(180, 100%, 50%) */
+}
+
+.item:hover .child li {
+    /* background-color: rgb(124, 223, 210) !important; */
+    color: rgb(235, 235, 243);
+    display: block;
+}
+
+
+/* 
+ESRI */
+
+.esri-widget--button {
+    background-color: #006699;
+    color: aliceblue;
+    font-weight: bolder;
+    border: 2px solid #fff;
+    border-radius: 9px;
+    /* -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    -ms-border-radius: 9px;
+    -o-border-radius: 9px;  */
+}
+
+.esri-widget--button:hover {
+    background-color: #006699;
+    /* color: aliceblue;
+    font-weight: bolder;
+    border: 2px solid #fff; */
+}
+
+.esri-widget .esri-interactive {
+    background-color: #006699;
+    border-radius: 13px;
+}
+
+.esri-ui-bottom-right {
+    border-radius: 23px;
+    -webkit-border-radius: 23px;
+    -moz-border-radius: 23px;
+    -ms-border-radius: 23px;
+    -o-border-radius: 23px;
+}
+
+.esri-ui-corner {
+    border-radius: 23px;
+    -webkit-border-radius: 23px;
+    -moz-border-radius: 23px;
+    -ms-border-radius: 23px;
+    -o-border-radius: 23px;
+}
+
+
+/* html,
+body,
+#viewDiv {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+} */
+
+
+/* ADD */
+
+.esri-view .esri-directions {
+    position: fixed;
+    right: 15px;
+}
+
+.esri-view .esri-component.esri-attribution {
+    position: fixed;
+}
